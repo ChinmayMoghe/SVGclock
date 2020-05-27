@@ -1,0 +1,132 @@
+:root {
+    --pi:calc(22 / 7);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+body {
+    background-color:black;
+}
+.svg-container {
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 50vw;
+    height: 50vh;
+    transform: translate(calc(50vw / 2 * -1),calc(50vh / 2* -1));
+}
+
+.clock{
+    font-size: 2em;
+    line-height: 10vh;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 6px #00f, 0 0 10px #fff, 0 0 20px #3bb4c4;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60vw;
+    height: 10vh;
+    transform: translate(calc(60vw / 2 * -1),calc(35vh + 10vh / 2* -1));
+}
+
+.title {
+    font-size: 2em;
+    line-height: 10vh;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 6px #00f, 0 0 10px #fff, 0 0 20px #3bb4c4;
+    color:#fff;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 60vw;
+    height: 10vh;
+    transform: translate(calc(60vw / 2 * -1),calc(10vh / 2* -1));
+    color: white;
+}
+
+
+svg{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    filter:url(#neon);
+}
+circle {
+    cx:100;
+    cy:100;
+    fill:none;
+    stroke:#3bb4c4;
+}
+.circle-96-thin {
+    r:96;
+    stroke-width: 1px;
+    stroke-dasharray:calc(2*var(--pi)*96);
+}
+
+.circle-96-thick {
+    r:96;
+    stroke-width: 5px;
+    stroke-dasharray: calc(2*var(--pi)*96*4/100),calc(2*var(--pi)*96*30/100),calc(2*var(--pi)*96*12/100);
+}
+
+.circle-88-thin {
+    r: 88;
+    stroke-width: 1px;
+    stroke-dasharray: calc(2*var(--pi)*88 / 5),calc(2*var(--pi)*88 / 5),calc(2*var(--pi)*88 / 5),calc(2*var(--pi)*88);
+}
+
+.circle-78-thin {
+    r: 78;
+    stroke-width: 0.5px;
+    stroke-dasharray: calc(2*var(--pi)*78*20/100),calc(2*var(--pi)*78);
+}
+
+.circle-70-thick{
+    r: 70;
+    stroke-width: 5px;
+    stroke-dasharray:2;
+}
+
+.circle-55-thin {
+    r: 55;
+    stroke-width: 1px;
+}
+
+.circle-55-thick {
+    r: 55;
+    stroke-width: 5px;
+    stroke-dasharray: calc(2*var(--pi)*55*4/200),calc(2*var(--pi)*55*30/300),calc(2*var(--pi)*55*12/120);
+}
+
+.circle-40-thin {
+    r: 40;
+    stroke-width: 1px;
+}
+
+.circle-40-thick {
+    r: 40;
+    stroke-width: 5px;
+    stroke-dasharray: 25 10;
+}
+
+.circle-30-thin {
+    r: 25;
+    stroke-width: 1px;
+}
+
+.circle-30-thick {
+    r: 25;
+    stroke-width: 5px;
+    stroke-dasharray: 1 1 2 3;
+}
+
+.circle-15-thin {
+    r:15;
+    stroke-width: 1px;
+    fill:#3bb4c4;
+}

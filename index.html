@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--Created by Akira-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>J.A.R.V.I.S clock</title>
+</head>
+<body>
+    <!--Created by Akira-->
+    <div class="title">J.A.R.V.I.S. clock</div>
+    <div class="svg-container">
+        <svg viewBox="0 0 200 200" preserveAspectRatio>
+            <!--Created by Akira.If you copy my code I will find you-->
+            <defs>
+                    <filter id="neon">
+                            <feFlood flood-color="#3bb4c4" flood-opacity="0.5" in="SourceGraphic" />
+                            <feComposite operator="in" in2="SourceGraphic" />
+                            <feGaussianBlur stdDeviation="15" />
+                            <feComponentTransfer result="glow1">
+                              <feFuncA type="linear" slope="4" intercept="0" />
+                            </feComponentTransfer>
+                            <feMerge>
+                               <feMergeNode in="glow1" />
+                               <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                          </filter>
+            </defs>
+            <circle class="circle-96-thin">
+            </circle>
+            <circle class="circle-96-thick">
+                    <animateTransform attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    from="760 100 100"
+                    to="0 100 100"
+                    dur="6s"
+                    repeatCount="indefinite"
+                    additive="sum"
+                    />
+            </circle>
+            <circle class="circle-88-thin">
+                    <animateTransform attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    from="0 100 100"
+                    to="320 100 100"
+                    dur="2.2s"
+                    repeatCount="indefinite"
+                    additive="sum"
+                    />
+            </circle>
+            <circle class="circle-78-thin">
+                    <animateTransform attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    from="720 100 100"
+                    to="0 100 100"
+                    dur="1.2s"
+                    repeatCount="indefinite"/>
+            </circle>
+            <circle class="circle-70-thick">
+                    <animateTransform attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    from="760 100 100"
+                    to="0 100 100"
+                    dur="15s"
+                    repeatCount="indefinite"
+                    additive="sum"
+                    />
+            </circle>
+            <circle class="circle-55-thin"></circle>
+            <circle class="circle-55-thick">
+                    <animateTransform attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    from="760 100 100"
+                    to="0 100 100"
+                    dur="0.5s"
+                    repeatCount="indefinite"
+                    additive="sum"
+                    />
+            </circle>
+            <circle class="circle-40-thin"></circle>
+            <circle class="circle-40-thick">
+                    <animateTransform attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    from="760 100 100"
+                    to="0 100 100"
+                    dur="0.5s"
+                    repeatCount="indefinite"
+                    additive="sum"
+                    />
+            </circle>
+            <circle class="circle-30-thin"></circle>
+            <circle class="circle-30-thick">
+                    <animateTransform attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    from="760 100 100"
+                    to="0 100 100"
+                    dur="0.5s"
+                    repeatCount="indefinite"
+                    additive="sum"
+                    />
+            </circle>
+            <circle class="circle-15-thin"></circle>
+        </svg>
+    </div>
+    <!--Created by Akira-->
+    <div class="clock"></div>
+</body>
+<!--Created by Akira-->
+<script src="app.js"></script>
+</html>
